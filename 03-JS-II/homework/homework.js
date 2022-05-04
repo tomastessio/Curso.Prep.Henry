@@ -18,7 +18,7 @@ function mayoriaDeEdad(edad) {
   if ( edad >= 18){
     return "Allowed";
   } else{
-    return "NotAllowed"; 
+    return "Not allowed"; 
   }
 }
   
@@ -29,10 +29,10 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status === 1){
-    return "online";
+    return "Online";
   } 
   else if (status === 2) {
-    return "away";
+    return "Away";
   }
   else {
     return "Offline";
@@ -47,16 +47,16 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if (idioma === "aleman"){
-    return "Guten hag!";
+    return "Guten Tag!";
   }
   else if (idioma === "mandarin"){
-    return "ni hao!";
+    return "Ni Hao!";
   }
   else if (idioma === "ingles"){
-    return "hello!";
+    return "Hello!";
   }
   else{
-    return "hola!";
+    return "Hola!";
   }
 }
 
@@ -74,11 +74,11 @@ function colors(color) {
     case "red":
       return "This is red";
     case "green":
-      return "this is green";
-    case orange:
-      return "this is orange";
+      return "This is green";
+    case "orange":
+      return "This is orange";
     default:
-        return "color not found";
+        return "Color not found";
   }
 }
 
